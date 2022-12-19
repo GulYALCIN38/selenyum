@@ -51,8 +51,8 @@ Sayfayi kapatin.
         //Sayfa handle degerini yazdirin
         System.out.println("sayfa hamdle gegeri"+driver.getWindowHandle());
         //Sayfa HTML kodlarinda “Gateway” kelimesi gectigini test edin
-        String actuelsayfakod= driver.getWindowHandle();
-        if(actuelsayfakod.contains("gateway")){
+        String actuelsayfakod= driver.getPageSource();
+        if(actuelsayfakod.contains("Gateway")){
             System.out.println(" test de HTML est passed");
 
         }else{
